@@ -4,7 +4,9 @@
 
 
 git clone https://github.com/skevin-dev/non-filers-prediction.git
+
 cd non-filers-predictions
+
 poetry install 
 
 # Environment Variables

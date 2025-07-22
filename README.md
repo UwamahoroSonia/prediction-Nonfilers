@@ -1,20 +1,29 @@
-# prediction-Nonfilers
+non-filers-prediction
 
-This project predicts taxpayers' filing vs non-filing status using advanced feature engineering and machine learning.
-
----
-
-## 📌 Setup
-
-**Install [Poetry](https://python-poetry.org/):**
-```bash
-curl -sSL https://install.python-poetry.org | python3 -
+Set up a working environment
 
 
+git clone https://github.com/skevin-dev/non-filers-prediction.git
+cd non-filers-predictions
+poetry install 
 
-Install dependencies:
-poetry install
+Environment Variables
 
-Run
-poetry run python your_script.py
+At the root folder, create a .env file and add the following variables
+
+- model directory to add models and feature columns used to train models
+- data folder used to train the model 
+
+Train the model
+to train the model the model you can the following command on terminal
+
+
+poetry run python main,py 
+
+to use the model for prediction
+
+to use the model for prediction you can the following command on terminal
+
+
+poetry run uvicorn api:app --reload --port 8000
 
